@@ -4,6 +4,6 @@ Research technologies
   Find a good endpoint for news searches
   Choose languages/frameworks
   Choose database
-  Hosting
+  Hosting - Heroku
 Design the UI
 Make and populate the database
