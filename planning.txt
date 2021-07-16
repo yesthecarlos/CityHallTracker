@@ -1,5 +1,6 @@
 Research technologies
   Parsing - docparser.com
+    4 rules: Attendance-Council, Motions, Motions Alt, Individual Motion
   Find a good endpoint for news searches
   Choose languages/frameworks
   Choose database
