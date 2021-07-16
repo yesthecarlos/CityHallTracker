@@ -1,5 +1,5 @@
 Research technologies
-  Parsing
+  Parsing - docparser.com
   Find a good endpoint for news searches
   Choose languages/frameworks
   Choose database
