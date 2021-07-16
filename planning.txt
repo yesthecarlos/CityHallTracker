@@ -2,8 +2,8 @@ Research technologies
   Parsing - docparser.com
     4 rules: Attendance-Council, Motions, Motions Alt, Individual Motion
   Find a good endpoint for news searches
-  Choose languages/frameworks
-  Choose database
+  Choose languages/frameworks - node.js?
+  Choose database - cleardb mysql
   Hosting - Heroku
 Design the UI
 Make and populate the database
