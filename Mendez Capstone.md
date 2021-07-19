@@ -10,13 +10,13 @@
 - User can view actions by each individual council member over time
 - User can view actions taken at any particular city council meeting
 
-**What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to *your* track, and *your* language) will you use to create this MVP? List them all here. Be specific.**
+**What tools, frameworks, libraries, APIs, modules and/or other resources will you use to create this MVP? List them all here. Be specific.**
 
 - C#
 - .NET 5
 - MySQL
 
-**If you finish developing the [minimum viable product (MVP)](https://www.learnhowtoprogram.com/lessons/the-minimum-viable-product) with time to spare, what will you work on next? Describe these features here: Be specific.**
+**If you finish developing the minimum viable product with time to spare, what will you work on next? Describe these features here: Be specific.**
 
 - Use keywords in actions to search local newspaper website and display top results next to actions to give user context
 - Allow users to login and favorite/save actions that were important to them
