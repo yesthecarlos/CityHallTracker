@@ -9,6 +9,7 @@
 * React
 * JSX
 * JavaScript
+* Node.js
 * MySQL
 * Heroku?
 
