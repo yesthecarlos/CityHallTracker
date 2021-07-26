@@ -1,0 +1,8 @@
+[
+  { "year":2015, "comments":50, "likes":240 },
+  { "year":2016, "comments":70, "likes":220 },
+  { "year":2017, "comments":68, "likes":300 },
+  { "year":2018, "comments":90, "likes":400 },
+  { "year":2019, "comments":120, "likes":540 },
+  { "year":2020, "comments":150, "likes":320 }
+]

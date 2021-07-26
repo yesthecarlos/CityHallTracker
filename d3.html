@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crash Course: D3.js</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg height="1000px" width="1000px"></svg>
+  <script> 
+    var svg = d3.select("svg")
+
+    var data = d3.json("socialnetwork.json").then((data => {
+
+      var x = d3
+      .scaleLinear()
+      .range([100, 800])
+      .domain([d3.min(data, (d) => d.year) - 1, d3.max(data, (d) => d.year) + 1]);
+
+      var y = d3
+      .scaleLinear()
+      .range([800, 100])
+      .domain([0, d3.max(data, (d) => d.comments)]);
+
+      svg
+        .append("g")
+        .attr("class", "axis")
+        .attr("transform", "translate(0," + 800 + ")")
+        .call(d3.axisBottom(x).ticks(data.length).tickFormat(d3.format("d")));
+
+      svg
+        .append("g")
+        .attr("class", "axis")
+        .attr("transform", "translate(" + 100 + ", 0)")
+        .call(d3.axisLeft(y)); 
+
+      d3.select("svg")
+      .selectAll('.barchartrectangle')
+      .data(data, (item, index) => index)
+      .enter()
+      .append("rect")
+      .attr("x", (item, index) => -50 + x(item.year))
+      .attr("y", (item, index) => y(item.comments))
+      .attr("width", 100)
+      .attr("height", (item, index) => 800 -y(item.comments))
+      .attr("fill", "blue")
+
+      }))
+
+      
+  </script>
+</body>
+</html>
